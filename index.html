@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Ruffle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="ticket.png" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Random Ruffle</h1>
+        <img src="ticket.png" class="logo"></img>
+    </div>
+
+    <div class="align-center">
+        <span class="error-massage" id="error-massage"></span>
+    </div>
+
+    <div id="config" class="section mb-2 mt-2">
+        <div class="mb-1">
+            <label for="no-winners">Number of winners:</label>
+        </div>
+        <div>
+            <input id="no-winners"></input>
+        </div>
+
+    </div>
+
+    <div id="participants-section" class="section">
+        <div>
+            <label for="participants">Participants:</label>
+        </div>
+        <div class="align-center mb-1">
+            <span>(names separated by comma)</span>
+        </div>
+
+        <div>
+            <textarea id="participants" rows="12"></textarea>
+        </div>
+
+    </div>
+
+    <div id="button-section" class="align-center mt-2">
+        <button id="raffle-button" class="button-primary" onclick="validation()">Ruffle!!!</button>
+    </div>
+
+
+    <div id="winners-section" class="section mt-2 mb-3">
+        <div class="mb-1">
+            <label for="winners">Winners:</label>
+        </div>
+
+        <div>
+            <span id="winners">Define the number of winners and participants first and click 'Raffle!!!' button.</span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
